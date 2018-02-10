@@ -1,10 +1,69 @@
-<!-- -->
-<!-- -->
-<!-- -->
+<!-- Using The class Attribute
+The class attribute specifies one or more class
+names for an HTML element.
+
+The class name can be used by CSS and JavaScript to perform certain 
+tasks for elements with the specified class name.-->
+<!-- 
+    Tip: The class attribute can be used on any HTML element.
+
+Note: The class name is case sensitive!
+-->
+<!-- 
+    Using The class Attribute in JavaScript
+JavaScript can access elements with a specified class name
+ by using the getElementsByClassName() method:
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* access to the class*/
+.city {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+ /* access to the class*/
+.main {
+  text-align: center;
+}
+</style>
+<script>
+   function myFunction(){
+       var x = document.getElementsByClassName("city");
+       for(var i = 0; i< x.length; i++)
+       {
+           x[i].style.display = "none";
+       }
+   } 
+</script>
+</head>
+
+<body>
+<p>Click the button, and a JavaScript hides all elements with the class name "city":</p>
+<button onclick="myFunction()">Hide elements</button>
+<h2 class="city main">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<p>In this example, CSS styles all elements with the class name "city".</p>
+
+</body>
+</html>
 
 
 
-<!-- -->
+<!--
+    Multiple Classes
+HTML elements can have more than one class name, 
+each class name must be separated by a space.
+ -->
 <!-- -->
 <!-- -->
 <!-- -->
