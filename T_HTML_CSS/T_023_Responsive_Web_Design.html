@@ -1,0 +1,60 @@
+<!-- 
+    What is Responsive Web Design?
+Responsive Web Design makes your web page look good on all 
+devices (desktops, tablets, and phones).
+
+Responsive Web Design is about using HTML and CSS to resize, 
+hide, shrink, enlarge, or move the content to make it look good on any screen:
+-->
+<!-- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-->
+<!-- 
+    This will set the viewport of your page, which will give the browser instructions on how to control the page's dimensions and scaling.
+
+Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:
+-->
+<!-- 
+    Responsive Text Size
+The text size can be set with a "vw" unit, which means the "viewport width".
+
+That way the text size will follow the size of the browser window:
+-->
+<!-- -->
+
+<DOCKTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+        <picture>
+                <source srcset="img/img_smallflower.jpg" media="(max-width: 600px)">
+                <source srcset="img/img_flowers.jpg" media="(max-width: 1500px)">
+                <source srcset="flowers.jpg">
+                <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+              </picture>
+              
+              <p>Resize the browser width and the image will change at 600px and 1500px.</p>
+              <h1 style="font-size:10vw;">Hello World</h1>
+
+              <p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+              
+              <p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+                           
+</body>
+</html>
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+
+
