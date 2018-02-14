@@ -1,0 +1,199 @@
+<!-- HTML Input Types-->
+<!-- Input Type Text
+<input type="text"> defines a one-line text input field:-->
+<!-- 
+    Input Type Password
+<input type="password"> defines a password field:
+-->
+<!-- -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/action_page.php">
+First name:<br>
+<input type="text" name="firstname">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+<br><br>
+<input type="submit">
+</form>
+
+<p>Note that the form itself is not visible.</p>
+<p>Also note that the default width of a text field is 20 characters.</p>
+
+
+
+<form action="">
+        User name:<br>
+        <input type="text" name="userid">
+        <br>
+        User password:<br>
+        <input type="password" name="psw">
+</form> 
+<p>The characters in a password field are masked (shown as asterisks or circles).</p>
+ 
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Kagaya"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Medel"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<form action="/action_page.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+</form>
+
+<form action="/action_page.php">
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+    <input type="submit">
+</form> 
+
+<form>
+        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+        <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+</form>
+<!-- Input Type Button
+<input type="button"> defines a button:-->
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+<form>
+        Select your favorite color:
+        <input type="color" name="favcolor">
+</form>
+
+<form>
+        Enter a date before 1980-01-01:
+        <input type="date" name="bday" max="1979-12-31"><br>
+        Enter a date after 2000-01-01:
+        <input type="date" name="bday" min="2000-01-02"><br>
+</form>
+
+<p>
+        Depending on browser support:<br>
+        A date picker can pop-up when you enter the input field.
+        </p>
+        
+        <form action="/action_page.php">
+          Birthday (date and time):
+          <input type="datetime-local" name="bdaytime">
+          <input type="submit" value="Send">
+        </form>
+        
+<p><strong>Note:</strong> type="datetime-local" is not supported in Firefox, or Internet Explorer 12 and earlier versions.</p>
+
+
+<form action="/action_page.php">
+    Search Google:
+    <input type="search" name="googlesearch">
+    <input type="submit">
+</form>
+</body>
+</html>
+
+
+
+<!-- 
+    The characters in a password field are masked (shown as asterisks or circles).
+-->
+<!-- 
+    Input Type Submit
+<input type="submit"> defines a button for submitting form data to a form-handler.
+
+The form-handler is typically a server page with a script for processing input data.
+
+The form-handler is specified in the form's action attribute:
+-->
+<!-- 
+    Input Type Reset
+<input type="reset"> defines a reset button that will reset all form values to their default values:
+-->
+<!-- 
+    Input Type Radio
+<input type="radio"> defines a radio button.
+
+Radio buttons let a user select ONLY ONE of a limited number of choices:
+-->
+<!-- 
+    HTML5 Input Types
+HTML5 added several new input types:
+
+color
+date
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+-->
+
+<!-- 
+    Input Type Date
+The <input type="date"> is used for input fields that should contain a date.
+
+Depending on browser support, a date picker can show up in the input field.
+-->
+
+<!-- 
+
+Input Type Datetime-local
+The <input type="datetime-local"> specifies a date and time input field, with no time zone.
+
+Depending on browser support, a date picker can show up in the input field.
+
+-->
+
+
+<!-- 
+    Input Type Email
+The <input type="email"> is used for input fields that should contain an e-mail address.
+
+Depending on browser support, the e-mail address can be automatically validated when submitted.
+
+Some smartphones recognize the email type, and adds ".com" to the keyboard to match email input.
+
+OperaSafariChromeFirefoxInternet Explorer
+Example
+-->
+
+<!-- <form>
+  E-mail:
+  <input type="email" name="email">
+</form>-->
+
+<!-- Input Restrictions
+Here is a list of some common input restrictions (some are new in HTML5):
+
+Attribute	Description
+disabled	Specifies that an input field should be disabled
+max	Specifies the maximum value for an input field
+maxlength	Specifies the maximum number of character for an input field
+min	Specifies the minimum value for an input field
+pattern	Specifies a regular expression to check the input value against
+readonly	Specifies that an input field is read only (cannot be changed)
+required	Specifies that an input field is required (must be filled out)
+size	Specifies the width (in characters) of an input field
+step	Specifies the legal number intervals for an input field
+value	Specifies the default value for an input field-->
+
+<!-- 
+    Input Type Range
+The <input type="range"> defines a control for entering a number 
+whose exact value is not important (like a slider control). Default 
+range is 0 to 100. However, you can set restrictions on what numbers 
+are accepted with the min, max, and step attributes:
+-->

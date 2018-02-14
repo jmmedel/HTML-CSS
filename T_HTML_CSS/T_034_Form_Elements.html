@@ -1,0 +1,172 @@
+<!-- 
+HTML Form Elements
+
+-->
+<!-- 
+    The <input> Element
+The most important form element is the <input> element.
+
+The <input> element can be displayed in several ways, depending on the type attribute.
+-->
+<!-- 
+    If the type attribute is omitted, the input field gets the default type: "text".
+-->
+<!-- 
+    The <select> Element
+    The <select> element defines a drop-down list:
+-->
+<!-- 
+    he <option> elements defines an option that can be selected.
+
+By default, the first item in the drop-down list is selected.
+
+To define a pre-selected option, add the selected attribute to the option:
+-->
+<!-- 
+    Allow Multiple Selections:
+Use the multiple attribute to allow the user to select more than one value:
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/action_page.php">
+  <p>Enter your name:</p>
+  <input name="firstname" type="text">
+  <br><br>
+  <input type="submit">
+</form>
+
+<form action="/action_page.php">
+    <select name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <input type="submit">
+</form>
+
+<form action="/action_page.php">
+    <select name="cars" size="4" multiple>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <br><br>
+    <input type="submit">
+  </form>
+  
+<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+ 
+<form action="/action_page.php">
+    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+    <br>
+    <input type="submit">
+</form>
+ <br>
+ <button type="button" onclick="alert('Hello World!')">Click Me!</button> 
+
+
+ <form action="/action_page.php">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <input type="submit">
+  </form>
+  
+  <p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+
+  <form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+  </form>
+  
+  <p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier versions.</p>
+ 
+  <form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form> 
+</body>
+</html>
+
+
+<!-- 
+    The <textarea> Element
+The <textarea> element defines a multi-line input field (a text area):
+-->
+<!-- 
+    The rows attribute specifies the visible number of lines in a text area.
+
+The cols attribute specifies the visible width of a text area.
+
+This is how the HTML code above will be displayed in a browser:
+-->
+<!-- 
+    The <button> Element
+The <button> element defines a clickable button:
+-->
+<!-- 
+    HTML5 Form Elements
+HTML5 added the following form elements:
+
+<datalist>
+<output>
+Note: Browsers do not display unknown elements. New elements that are not supported in older browsers will not "destroy" your web page.
+
+HTML5 <datalist> Element
+The <datalist> element specifies a list of pre-defined options for an <input> element.
+
+Users will see a drop-down list of the pre-defined options as they input data.
+
+The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+-->
+<!-- 
+    HTML5 <output> Element
+The <output> element represents the result of a calculation (like one performed by a script).
+-->
+<!-- 
+    HTML Form Elements
+= new in HTML5.
+
+Tag	Description
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+<textarea>	Defines a multiline input control (text area)
+<label>	Defines a label for an <input> element
+<fieldset>	Groups related elements in a form
+<legend>	Defines a caption for a <fieldset> element
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+<button>	Defines a clickable button
+<datalist>	Specifies a list of pre-defined options for input controls
+<output>	Defines the result of a calculation
+-->
+<!-- -->
+
+
+
