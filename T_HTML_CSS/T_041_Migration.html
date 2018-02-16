@@ -1,0 +1,223 @@
+<!-- HTML5 Migration-->
+<!-- 
+    Migration from HTML4 to HTML5
+This chapter is entirely about how to migrate from HTML4 to HTML5.
+
+This chapter demonstrates how to convert an HTML4 page into an HTML5 page, 
+without destroying anything of the original content or structure.
+-->
+<!-- 
+    Typical HTML4	Typical HTML5
+<div id="header">	<header>
+<div id="menu">	<nav>
+<div id="content">	<section>
+<div class="article">	<article>
+<div id="footer">	<footer>
+-->
+<!-- A Typical HTML4 Page
+Example
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>HTML4</title>
+<style>
+body {
+    font-family: Verdana,sans-serif;
+    font-size: 0.9em;
+}
+
+div#header, div#footer {
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+div#content {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+div.article {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+div#menu ul {
+    padding: 0;
+}
+
+div#menu ul li {
+    display: inline;
+    margin: 5px;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>Monday Times</h1>
+</div>
+
+<div id="menu">
+  <ul>
+    <li>News</li>
+    <li>Sports</li>
+    <li>Weather</li>
+  </ul>
+</div>
+
+<div id="content">
+  <h2>News Section</h2>
+  <div class="article">
+    <h2>News Article</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+  </div>
+  <div class="article">
+    <h2>News Article</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+  </div>
+</div>
+
+<div id="footer">
+  <p>&amp;copy; 2016 Monday Times. All rights reserved.</p>
+</div>
+
+</body>
+</html>-->
+
+<!-- 
+    hange to HTML5 Doctype
+Change the doctype:
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+to the HTML5 doctype:
+
+Example
+<!DOCTYPE html>
+Change to HTML5 Encoding
+Change the encoding information:
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+to HTML5 encoding:
+
+Example
+<meta charset="utf-8">
+-->
+<!-- 
+    Add The HTML5Shiv
+The new HTML5 semantic elements are supported in all modern browsers. In addition, you can "teach" older browsers how to handle "unknown elements".
+
+However, IE8 and earlier, does not allow styling of unknown elements. So, the HTML5Shiv is a JavaScript workaround to enable styling of HTML5 elements in versions of Internet Explorer prior to version 9.
+
+Add the HTML5Shiv:
+
+Example
+<![if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+<!-- 
+    body {
+    font-family: Verdana,sans-serif;
+    font-size: 0.9em;
+}
+
+header, footer {
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+section {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+article {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 5px;
+}
+-->
+<!-- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HTML5</title>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+</script>
+<![endif]-->
+<link rel="stylesheet" href="css/T_041.css">
+
+</head>
+<body>
+
+<header>
+<h1>Monday Times</h1>
+</header>
+
+<nav>
+<ul>
+  <li>News</li>
+  <li>Sports</li>
+  <li>Weather</li>
+</ul>
+</nav>
+
+<section>
+<h2>News Section</h2>
+<article>
+<h2>News Article</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+</article>
+<article>
+<h2>News Article</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+</article>
+</section>
+
+<footer>
+<p>&copy; 2014 Monday Times. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+<!-- 
+    The Difference Between <article> <section> and <div>
+There is a confusing (lack of) difference in the HTML5 standard, between <article> <section> and <div>.
+
+In the HTML5 standard, the <section> element is defined as a block of related elements.
+
+The <article> element is defined as a complete, self-contained block of related elements.
+
+The <div> element is defined as a block of children elements.
+
+How to interpret that?
+
+In the example above, we have used <section> as a container for related <articles>.
+
+But, we could have used <article> as a container for articles as well.
+
+Here are some different examples:
+-->
+
+
+
+
