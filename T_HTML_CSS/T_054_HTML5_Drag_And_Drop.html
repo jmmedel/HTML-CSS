@@ -1,0 +1,95 @@
+<!--HTML5 Drag and Drop -->
+<!-- 
+    Drag and Drop
+Drag and drop is a very common feature. It is when you "grab" an object and drag it to a different location.
+
+In HTML5, drag and drop is part of the standard: Any element can be draggable.
+
+Browser Support
+The numbers in the table specify the first browser version that fully supports Drag and Drop.
+-->
+<!-- 
+    Make an Element Draggable
+First of all: To make an element draggable, set the draggable attribute to true:
+
+<img draggable="true">
+-->
+<!-- 
+    What to Drag - ondragstart and setData()
+Then, specify what should happen when the element is dragged.
+
+In the example above, the ondragstart attribute calls a function, drag(event), that specifies what data to be dragged.
+
+The dataTransfer.setData() method sets the data type and the value of the dragged data:
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+In this case, the data type is "text" and the value is the id of the draggable element ("drag1").
+
+Where to Drop - ondragover
+The ondragover event specifies where the dragged data can be dropped.
+
+By default, data/elements cannot be dropped in other elements. To allow a drop, we must prevent the default handling of the element.
+
+This is done by calling the event.preventDefault() method for the ondragover event:
+
+event.preventDefault()
+Do the Drop - ondrop
+When the dragged data is dropped, a drop event occurs.
+
+In the example above, the ondrop attribute calls a function, drop(event):
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+Code explained:
+
+Call preventDefault() to prevent the browser default handling of the data (default is open as link on drop)
+Get the dragged data with the dataTransfer.getData() method. This method will return any data that was set to the same type in the setData() method
+The dragged data is the id of the dragged element ("drag1")
+Append the dragged element into the drop element
+More Examples
+Drag image back and forth
+How to drag (and drop) an image back and forth between two <div> elements:
+-->
+<!--HTML Drag and Drop Example
+The example below is a simple drag and drop example: -->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="js/T_055.js"></script>
+    <style>
+        #div1, #div2 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        </style>
+</head>
+<body>
+    <h2>Drag and Drop</h2>
+    <p>Drag the image back and forth between the two div elements.</p>
+    
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="img/program.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+    </div>
+    
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+
+</body>
+</html>
+
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+
