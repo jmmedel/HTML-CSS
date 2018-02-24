@@ -1,3 +1,17 @@
 body{
     background-color: lightblue;
+    background-image: url("../image/showcase.jpg");
+    background-repeat: no-repeat
+}
+
+h1 {
+    background-color: green;
+}
+
+div {
+    background-color: lightblue;
+}
+
+p {
+    background-color: yellow;
 }
