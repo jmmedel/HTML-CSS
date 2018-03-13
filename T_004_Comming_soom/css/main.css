@@ -40,5 +40,30 @@ body, html{
     text-align: center;
 }
 h1 {
+    /* Set font size for h1 elemnts */
+    font-size: 40px;
+    /* Add spacing between letter*/
+    letter-spacing: 30px;
+    /* Set how thick or thin character in text should be displayed */
+    font-weight: 100;
+}
 
+#demo {
+    /*
+        Sets how thick or thin character in text should be displayed
+    */
+    font-weight:  lighter;
+
+
+    /* Add spacing between words*/
+    word-spacing:  20px;
+}
+
+hr{
+    /* Set margin to auto align it center */
+    margin: auto;
+    /* Set the width */
+    width: 80%;
+    /*Add border around hr - width type Color */
+    border:1.5px solid #fff;
 }
