@@ -1,0 +1,37 @@
+/*ALL the <h1> styling works for <p> as well*/
+
+h1 {
+  /*Select the font*/
+  font-family: Arial, "Times New Roman";
+  /*Set the font size*/
+  font-size: 22px;
+  /*Set the font style "italic, oblique, normal"*/
+  font-style: italic;
+  /*Set the font weight/thickness*/
+  font-weight: 100;
+  /*Align the text "left, center, right"*/
+  text-align: left;
+  /*Set the text decoration "line-trhough, overline, underline"*/
+  text-decoration: underline;
+  /*Indent the text*/
+  text-indent: 30px;
+  /*Transform the text "lowercase, uppercase, capitalize, full-width"*/
+  text-transform: lowercase;
+  /*Set a text color as text, HEX, RGB, or RGB with transparency*/
+  color: red;
+  color: #FF0000;
+  color: rgb(255, 0, 0);
+  color: rgba(255, 0, 0, 0.5);
+  /*Set the text letter spacing*/
+  letter-spacing: 10px;
+  /*Set the text word spacing*/
+  word-spacing: 10px;
+  /*Set the line height*/
+  line-height: 40px;
+}
+
+/*When we use links these stylings are useful*/
+a {
+  /*Remove underline under links*/
+  text-decoration: none;
+}
