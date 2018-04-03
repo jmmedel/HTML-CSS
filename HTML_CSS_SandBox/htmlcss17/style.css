@@ -39,6 +39,11 @@
   width: 100%;
 }
 
+.banner{
+  
+  align-content: center;
+
+}
 /*This is how we make the website responsive with pure CSS*/
 /*Here we use a Media Query to change some of the styling once the browser or device width gets larger than 768px*/
 
