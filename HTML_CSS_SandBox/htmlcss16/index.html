@@ -13,22 +13,22 @@
       <!--"autoplay" plays the video as soon as the page has loaded-->
       <!--"controls" ads controls to the video, so you can pause, play, skip, etc.-->
       <!--"poster" is the thumbnail you see on the video before you play it.-->
-      <video src="movie.mp4" autoplay controls poster="img/videothumbnail.jpg"></video>
+      <video src="videos/movie.mp4" autoplay controls poster="img/videothumbnail.jpg"></video>
 
       <!--This is another way we can create the video where we can add browser support, since not all browsers support certain video formats.-->
       <!--By adding multiple <source> tags, the browser will skip them one at a time if the video format is not supported.-->
       <!--You still need to upload all the different videos with different formats to your rootfolder for the <source> tags to work!-->
       <video autoplay controls poster="img/videothumbnail.jpg">
-        <source src="movie.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        <source src="movie.mov" type="video/mov">
+        <source src="videos/movie.mp4" type="video/mp4">
+        <source src="videos/movie.ogg" type="video/ogg">
+        <source src="videos/movie.mov" type="video/mov">
         Your browser does not support the video!
       </video>
 
       <!--Here we are linking to a video online. This we call to "embed" a video-->
       <!--The "videowrapper" class we use to scale the width and height, when we resize the video-->
       <div class="videowrapper">
-        <iframe src="https://www.youtube.com/embed/qVU3V0A05k8?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/A5AQ2RrCpuw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
   </body>
