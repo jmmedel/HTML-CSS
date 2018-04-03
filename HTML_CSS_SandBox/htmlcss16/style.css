@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+/*This is the container for the embedded video*/
+/*We need this to be able to resize an embedded video*/
+.videowrapper {
+  /*The "position" styling is used to move an element any direction*/
+  /*Here we set a "position: relative;" in order for the "position" in the iframe styling to work. So basically, it doesn't do anything visual to the "videowrapper"*/
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px;
+}
+
+/*Here we style the iframe*/
+.videowrapper iframe {
+  /*Here we set a "position: absolute;" in order for the iframe to have a 100% width and height of "videowrapper"*/
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+}

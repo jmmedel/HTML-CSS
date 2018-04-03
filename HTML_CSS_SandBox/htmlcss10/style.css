@@ -1,0 +1,27 @@
+/*This example is without importing fonts*/
+.paragraph {
+  font-family: arial;
+  font-size: 50px;
+  line-height: 62px;
+}
+
+/*This example is with a font imported through a link in our index file (above the stylesheet link)*/
+.paragraph {
+  font-family: 'Lobster';
+  font-size: 50px;
+  line-height: 62px;
+}
+
+/*This example is with a font imported by uploading the font into our websites rootfolder*/
+@font-face {
+  /*Here we give the font a name*/
+  font-family: Lobster;
+  /*Here we link to the font*/
+  src: url(fonts/Lobster-Regular.ttf);
+}
+
+.paragraph {
+  font-family: Lobster;
+  font-size: 50px;
+  line-height: 62px;
+}

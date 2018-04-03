@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+/*Here we style the <img> by giving it a width*/
+/*The height scales automatically when we change the with*/
+img {
+  width: 300px;
+}
+
+/*Here we style the <dib> by giving it a background image*/
+.img-eye {
+  width: 300px;
+  height: 200px;
+  /*Here we link to the image*/
+  background-image: url(img/eye.jpg);
+  /*Here we change the image size, NOT the div size*/
+  /*We can use %, contain, and cover*/
+  background-size: 200%;
+  /*The image will repeat inside the div if we do not add this*/
+  background-repeat: no-repeat;
+  /*Here we can choose where to position the image inside the div*/
+  background-position: center left;
+}
+
+/*We can also create hover effects on images!*/
+/*We have more options for hover effects, if we insert the image as a div*/
+.img-eye:hover {
+  background-size: 100%;
+}

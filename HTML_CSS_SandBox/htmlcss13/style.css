@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*This changes the websites background color*/
+body {
+  background-color: #eee;
+}
+
+/*This is the menu bar at the top of the website*/
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+}
+
+/*We style the ul when we want to move the entire menu around*/
+ul {
+  margin-left: 60px;
+}
+
+/*We style the li when we want to move the links around*/
+/*I used "list-style: none;" to remove the bullet points behind the <li>*/
+ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 100px;
+}
+
+/*We style the a when we want to style the link text*/
+/*I used "display: block;" and padding to make the link area bigger*/
+ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: arial;
+  color: #1e1e1e;
+  padding: 0 20px;
+}
+
+/*This is how we create hover effects on tags*/
+ul li a:hover {
+  color: red;
+}

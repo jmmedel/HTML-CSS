@@ -1,0 +1,101 @@
+/*The first code here is basic styling*/
+/*Notice that the first styling here is made to look good on a mobile phone. The tablet and desktop styling is further down this document.*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.img-banner {
+  display: none;
+}
+
+.img-info {
+  width: 100%;
+}
+
+.img-info h2 {
+  padding: 30px 30px 20px;
+  font-family: arial;
+  font-size: 50px;
+  color: #111;
+  line-height: 44px;
+}
+
+.img-info p {
+  padding: 0px 30px 20px;
+  font-family: arial;
+  font-size: 16px;
+  color: #111;
+  line-height: 24px;
+}
+
+.img-me {
+  width: 100%;
+}
+
+/*This is how we make the website responsive with pure CSS*/
+/*Here we use a Media Query to change some of the styling once the browser or device width gets larger than 768px*/
+
+/*After this Query, we add a second Media Query that checks for another min width, meaning that this one makes our website responsive for "tablet", and the one further down changes it for "desktop".*/
+
+/*
+@media = Change this CSS when the following is true
+only screen = Only check changes made to the device screen
+(min-width: 768px) = If the width is larger than 768px then do this...
+*/
+@media only screen and (min-width: 768px) {
+  .img-banner {
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .wrapper {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .img-info h2 {
+    padding: 20px 0px 0px;
+  }
+
+  .img-info p {
+    padding: 20px 0px 0px;
+  }
+
+  .img-me {
+    padding-top: 30px;
+  }
+}
+
+/*Here we make the website responsive for a desktop width*/
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+  }
+
+  .img-info {
+    width: 50%;
+    float: right;
+  }
+
+  .img-info h2 {
+    padding: 20px 0px 0px 30px;
+  }
+
+  .img-info p {
+    padding: 20px 0px 0px 30px;
+  }
+
+  .img-me {
+    padding-top: 0px;
+    width: 50%;
+    float: left;
+  }
+}
