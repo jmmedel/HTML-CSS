@@ -1,0 +1,55 @@
+
+
+
+<!-- 
+    Positioning Text In an Image
+How to position text over an image:
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    position: relative;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+</style>
+</head>
+<body>
+
+<h2>Image Text</h2>
+<p>Add some text to an image in the bottom right corner:</p>
+
+<div class="container">
+  <img src="trolltunga.jpg" alt="Norway" width="1000" height="300">
+  <div class="bottomright">Bottom Right</div>
+</div>
+
+</body>
+</html>
+
+<!--
+    All CSS Positioning Properties
+Property	Description
+bottom	Sets the bottom margin edge for a positioned box
+clip	Clips an absolutely positioned element
+left	Sets the left margin edge for a positioned box
+position	Specifies the type of positioning for an element
+right	Sets the right margin edge for a positioned box
+top	Sets the top margin edge for a positioned box
+z-index	Sets the stack order of an element
+ -->
+
