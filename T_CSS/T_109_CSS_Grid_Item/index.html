@@ -1,5 +1,77 @@
-
-
 <!-- 
     CSS Layout - width and max-width
 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        
+        .item1 {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+        
+        .item2 {
+            grid-column: 3;
+            grid-row: 1 / span 2;
+        }
+        
+        .item5 {
+            grid-column: 1 / span 3;
+            grid-row: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>A Five Items Grid Layout:</h1>
+
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+    </div>
+
+    <p>Direct child elements(s) of the grid container automatically becomes grid items.</p>
+
+    <p>Item 1, 2, and 5 are set to span multiple columns or rows.</p>
+
+</body>
+
+</html>
+
+<!--
+    Child Elements (Items)
+
+A grid container contains grid items.
+
+By default, a container has one grid item for each column, in each row, but you can style the grid items so that they will span multiple columns and/or rows.
+The grid-column Property:
+
+The grid-column property defines on which column(s) to place an item.
+
+You define where the item will start, and where the item will end.
+
+
+Note: The grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties.
+
+To place an item, you can refer to line numbers, or use the keyword "span" to define how many columns the item will span.
+ -->
